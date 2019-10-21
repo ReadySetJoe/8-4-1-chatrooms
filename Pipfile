@@ -15,6 +15,7 @@ dj-database-url = "*"
 pillow = "*"
 psycopg2-binary = "*"
 reverse = "*"
+django-rest-framework = "*"
 
 [requires]
 python_version = "3.7"

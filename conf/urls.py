@@ -22,7 +22,9 @@ urlpatterns = [
     # path('', include('chats.urls', namespace='chats')),
     # path('accounts/', include('django.contrib.auth.urls')),
     # path('accounts/', include('accounts.urls', namespace='accounts')),
+    path('api/v1/', include('api.urls')),
     path('admin/', admin.site.urls),
+    path('', include('frontend.urls')),
 ]
 
 if settings.DEBUG:  # new

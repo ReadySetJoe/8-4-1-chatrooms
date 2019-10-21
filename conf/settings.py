@@ -43,11 +43,14 @@ INSTALLED_APPS = [
     # third party
     'crispy_forms',
     'parsley',
+    'rest_framework',
 
     # local
     'accounts.apps.AccountsConfig',
     # 'chats.apps.ChatsConfig',
     'frontend.apps.FrontendConfig',
+    'todos.apps.TodosConfig',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -145,5 +148,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECTION_URL = '/accounts/login/'
-
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend/static/build/static'),
+)
 REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')

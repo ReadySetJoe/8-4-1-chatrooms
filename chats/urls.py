@@ -8,5 +8,5 @@ app_name = 'chats'
 urlpatterns = [
     path('<int:pk>/comment/new/', views.CommentCreateView.as_view(), name='add_comment'),
     path('<int:pk>/', views.ChatDetailView.as_view(), name='chat_detail'),
-    path('', views.ChatListView.as_view(), name='chat_list'),
+    # path('', views.ChatListView.as_view(), name='chat_list'),
 ]
