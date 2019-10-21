@@ -46,7 +46,8 @@ INSTALLED_APPS = [
 
     # local
     'accounts.apps.AccountsConfig',
-    'chats.apps.ChatsConfig',
+    # 'chats.apps.ChatsConfig',
+    'frontend.apps.FrontendConfig',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECTION_URL = '/accounts/login/'
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
