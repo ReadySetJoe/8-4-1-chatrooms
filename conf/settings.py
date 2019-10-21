@@ -26,7 +26,7 @@ SECRET_KEY = 'or0w(694lhx_7b$_!h+t824epa^1ss9=8&no+2ohf4riv5forj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['frozen-dawn-59391.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
